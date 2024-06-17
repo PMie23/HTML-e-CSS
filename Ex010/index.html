@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando Links Externos</h1>
+    <p>Você pode acessar o <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositório público do Gustavo no GitHub.</a></p> <!-- o target serve para dizer onde o site de destino vai abrir (_blank -> na nova janela em branco) e o rel indica qual a natureza do destino (external -> o link não faz parte do site aqui criado)-->
+
+    <p>Você também pode acessar <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="nofollow">o canal gratuito do Guanabara</a> no YouTube.</p> <!--NEste caso, abrirá a pág. numa aba nova (_blank) e este site não é patrocinador do site criado, o que informa para o Google que não perpetue a busca para esse site (nofollow).-->
+
+    <h2>Usando Links Internos</h2>
+    <p>Esta é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" target="_self" rel="next">segunda página.</a></p>
+
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" target="_self" rel="next">página de notícias</a></p>
+
+    <h1>Links para Download</h1>
+    <ul>
+        <li><a href="Livro/10 - Ligações em toda parte.pdf" download="Ligações em toda parte.pdf" type="application/pdf">Baixar o livro em PDF.</a></li>
+        <li><a href="Livro/10 - Ligações em toda parte.zip" download="Ligações em toda parte.zip" type="application/zip">Livro compactado em ZIP.</a></li>
+    </ul>
+</body>
+
+</html>
