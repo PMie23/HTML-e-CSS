@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+    <video width="560" height="315" poster="imagens/Tela Inicial.png" autoplay muted controls loop><!-- o 500 é a baixa da resolução para 500; o poster é a imagem que será a capa do vídeo e controls são os botões para executar o vídeo-->
+       <source src="midia/Meuvideo720.mp4" type="video/mp4">
+       <source src="midia/Meuvideo720.webm" type="video/webm">
+       <source src="midia/Meuvideo720.mkv" type="video/mkv">
+       <source src="midia/meuvideo720.ogv" type="video/ogv"><!--É colocado do menor vídeo para o maior e se faz com todos os formatos pq alguns formatos não funcionam em alguns navegadores-->
+       <p>Seu navegador não tem compatibilidade com reprodução de videos.</p>
+    </video>
+
+    <h1>Inserindo vídeos do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=Q30s9HSV4xOkHRj1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <h1>Inserindo vídeos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/29844795?h=f0a1764666&autoplay=1&loop=1&color=ff0179&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>
