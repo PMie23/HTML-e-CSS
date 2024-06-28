@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav {
+            background-color: rgb(131, 118, 118);
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.377);
+            /* shorthand: deslocam. horiz.; deslocam. vertical; espalhamento; sombra;*/
+            /*Colocar sempre assim que está bom.*/
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;        
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px; /*Vértices Arredondados*/
+            /*Pode também configurar cada borda por vez. 10px 20px 30px 40px*/
+            /*Ou de 2 em 2. 10px 20px*/
+        }
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article > aside {
+            background-color: rgb(170, 170, 170);
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header> <!--Cabeçalho-->
+        <h1>Meu Site</h1>
+        <nav> <!--Links, menu-->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main> <!--Conteúdo Principal-->
+        <section id="assuntos">
+            <p>Esportes Política Tecnologia</p>
+        </section> <!--Seções de conteúdo-->
+        <section id="noticias">
+            <article> <!--Conteúdo a ser lido-->
+                <h2>Notícias sobre a Irlanda</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis officiis praesentium iusto mollitia cupiditate dolorem corrupti assumenda id, minima dolorum asperiores fugit soluta, quaerat maxime, minus voluptates dolore? Facere, asperiores.</p>
+                <aside> <!--Conteúdo periférico ao conteúdo principal-->
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer> <!--Rodapé-->
+        <p>Desenvolvido pelo CursoemVideo</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
