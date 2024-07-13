@@ -3,20 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
             height: 100vh;
-            background-color: black;
+            /*background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center top;
-            background-repeat: no-repeat;
+            background-repeat: repeat;
+            background-size: cover;
+            background-attachment: fixed;
+       
+            Shorthand para background:
+               color > image > position > repeat > [size][não tá funcionando como diz no manual] > attachment
+            */
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat  fixed;
             background-size: cover;
         }
 
+
+
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -27,6 +36,9 @@
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, accusamus. Unde, vel? Consequuntur vero debitis odio molestias voluptate, id ea excepturi quis eos doloremque aliquam est culpa, accusantium vitae incidunt! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut labore sed optio fugit dolor tempora a soluta aut commodi dolorem cupiditate nam nihil, odio sunt reprehenderit magni maxime saepe rem! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate nostrum molestiae laudantium ut nulla incidunt beatae dolorem hic consequatur architecto distinctio odio veritatis eos assumenda quod dicta, perspiciatis mollitia reiciendis.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, accusamus. Unde, vel? Consequuntur vero debitis odio molestias voluptate, id ea excepturi quis eos doloremque aliquam est culpa, accusantium vitae incidunt! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut labore sed optio fugit dolor tempora a soluta aut commodi dolorem cupiditate nam nihil, odio sunt reprehenderit magni maxime saepe rem! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate nostrum molestiae laudantium ut nulla incidunt beatae dolorem hic consequatur architecto distinctio odio veritatis eos assumenda quod dicta, perspiciatis mollitia reiciendis.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, accusamus. Unde, vel? Consequuntur vero debitis odio molestias voluptate, id ea excepturi quis eos doloremque aliquam est culpa, accusantium vitae incidunt! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut labore sed optio fugit dolor tempora a soluta aut commodi dolorem cupiditate nam nihil, odio sunt reprehenderit magni maxime saepe rem! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate nostrum molestiae laudantium ut nulla incidunt beatae dolorem hic consequatur architecto distinctio odio veritatis eos assumenda quod dicta, perspiciatis mollitia reiciendis.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, accusamus. Unde, vel? Consequuntur vero debitis odio molestias voluptate, id ea excepturi quis eos doloremque aliquam est culpa, accusantium vitae incidunt! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut labore sed optio fugit dolor tempora a soluta aut commodi dolorem cupiditate nam nihil, odio sunt reprehenderit magni maxime saepe rem! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate nostrum molestiae laudantium ut nulla incidunt beatae dolorem hic consequatur architecto distinctio odio veritatis eos assumenda quod dicta, perspiciatis mollitia reiciendis.</p>
     </main>
     
