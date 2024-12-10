@@ -12,9 +12,13 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form>
-        <p>Nome: <input type="text" name="nome" id="nome"></p> <!--O input "text" cria a caixinha do lado do nome para colocar o texto-->
-        <p>Sobrenome: <input type="text" name="sobrenome" id="sobrenome"></p>
+    <form action="cadastro.php" autocomplete="off"> <!--Action -> Direciona os dados para um script (nesse caso um arquivo php.
+    Autocomplete "off"-> Desliga o auto preenchimento dos campos dos formulários-->
+        <p><label for="inome">Nome:</label> <!--O label linka a caixinha ao nome que o representa. Envelopar o nome e colocar "label"--> 
+            <input type="text" name="nome" id="inome"></p> <!--O input "text" cria a caixinha do lado do nome para colocar o texto-->
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+            <!--"name" é mais importante para HTML e PHP, enquanto "id" é mais importante para JavaScript-->
         <p><input type="submit" value="Enviar"></p> <!--O input "submit" permite criar o botão que se aperta para alguma ação. Nesse caso, enviar o relatório-->
     </form>
 </body>
