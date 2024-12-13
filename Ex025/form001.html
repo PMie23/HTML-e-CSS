@@ -12,8 +12,9 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form action="cadastro.php" autocomplete="off"> <!--Action -> Direciona os dados para um script (nesse caso um arquivo php.
-    Autocomplete "off"-> Desliga o auto preenchimento dos campos dos formulários-->
+    <form action="cadastro.php" method="post" autocomplete="off"> <!--Action -> Direciona os dados para um script (nesse caso um arquivo php.
+    Autocomplete "off"-> Desliga o auto preenchimento dos campos dos formulários
+    Method -> é método de envio de formulário. Pode ser "GET" (que envia mas fica visível na caixa de URL) ou "POST" (que fica escondido aos olhos na URL mas os dados continuam sem estar seguro)-->
         <p><label for="inome">Nome:</label> <!--O label linka a caixinha ao nome que o representa. Envelopar o nome e colocar "label"--> 
             <input type="text" name="nome" id="inome"></p> <!--O input "text" cria a caixinha do lado do nome para colocar o texto-->
         <p><label for="isobrenome">Sobrenome:</label> 
