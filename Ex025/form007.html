@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Formaulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iest">Estado:</label>
+            <select name="estado" id="iest"> <!--Elemento que cria uma caixa c drop down para escolher as opções que serão dadas abaixo-->
+                <option value="" selected>--- Escolha ---</option> <!--"Selected" é o texto que ficará a mostra na caixa-->
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option><!--Essas são as opções que serão possíveis para escolher pelo usuário-->
+                </optgroup> <!--Esse elemento agrupa alguns "options" a escolha do Desenvolvedor. Nesse caso, separados os Estados por Região-->
+
+                <optgroup label="Região Nordeste">
+                    <option value="AL">Alagoas</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PE">Pernambuco</option><!--Essas são as opções que serão possíveis para escolher pelo usuário-->
+                </optgroup>
+                
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="lstprof"><!--Neste caso, o comando "list" abre as opções abaixo para o usuário escolher-->
+                <datalist id="lstprof">
+                    <option value="ADM">Administrador</option>
+                    <option value="CONT">Contabilista</option>
+                    <option>Desenvolvedor</option>
+                <option>Professor</option> <!--Sem o comando "value", só aparece o que ta entre o comando.
+                A diferença do "datalist" pro "select" é q o primeiro, se não estiver na lista, vc pode escrever o que quiser. O segundo, só pode escolher os da lista.-->
+                </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem:</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea> <!--Serve para abrir uma caixa de msg. Ela é infinita. o "cols" e o "rows" é só para margear o tamanho dela qnd a página é aberta.
+            Como a msg é infinita, lembrar de coocar em "post"-->
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
